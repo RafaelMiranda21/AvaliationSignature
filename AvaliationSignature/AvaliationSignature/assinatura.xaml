@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+             x:Class="AvaliationSignature.assinatura"
+             
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <forms:SignaturePadView x:Name="PadView" StrokeColor="Black"
+                            BackgroundColor="white"
+                            StrokeWidth="3"
+                            WidthRequest="280"
+                            HeightRequest="360"
+                            HorizontalOptions="FillAndExpand"/>
+        <Button Text="Salvar" Clicked="Button_Clicked"/>
+        <Button Text="Limpar" Clicked="Button_Clicked_1"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
